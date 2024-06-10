@@ -6,6 +6,7 @@ function Sample4() {
   const [count, setCount] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
 
+  // Derived state 👇
   const double = count * 2;
 
   function incrementCount() {
@@ -14,7 +15,7 @@ function Sample4() {
 
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 200);
 
     // setCount((prevCount) => prevCount + 1);
     // setCount((prevCount) => prevCount + 1);
